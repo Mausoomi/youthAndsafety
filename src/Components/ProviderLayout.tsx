@@ -2,7 +2,7 @@
 
 import { Provider } from "react-redux";
 import { store } from "../Store/store";
-import LayoutWrapper from "./LayoutWrapper";
+// import LayoutWrapper from "./LayoutWrapper";
 
 export default function ProviderLayout({
   children,
@@ -12,8 +12,8 @@ export default function ProviderLayout({
   return (
     <div className="font-poppins">
       <Provider store={store}>
-        <LayoutWrapper>{children}</LayoutWrapper>
-        {/* {children} */}
+        {/* <LayoutWrapper>{children}</LayoutWrapper> */}
+        {children}
       </Provider>
     </div>
   );
